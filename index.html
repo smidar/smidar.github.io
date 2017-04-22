@@ -548,10 +548,8 @@
 		
 			$('.form').submit(function(){
 				var form = $(this).serialize();
-				console.log(form);
-				
-				$.post("http://tryggvi.demo01.lisa.is/contact", form, function(){ alert('success!'); });
-				
+				$.post("http://tryggvi.demo01.lisa.is/contact", form, function(){ });
+				return false;
 			});
 		});
 
