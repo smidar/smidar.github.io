@@ -156,6 +156,34 @@
 			</div><!-- /cta -->
 			<!-- End 3 Services -->
 
+
+			<div class="mt40 mb40">
+				<div class="container">
+
+					<!-- Begin Title -->
+					<div class="row">
+						<div class="col-sm-12 mb20">
+							<div class="heading"><h4>Contact us</h4></div>
+						</div>
+						<div class="col-sm-6" data-sr="enter left">
+							<form action="#" method="post" class="contact-form">
+								<input type="hidden" name="action" value="process-b4c9cc03-27a3-11e7-80c9-005056bc217f" />
+								<label>Nafn<input type="text" class="name" name="fieldb4c9cc04-27a3-11e7-80c9-005056bc217f" /></label> <br />
+								<label>Netfang<input type="email" class="email" name="fieldbe0e0da3-27a3-11e7-80c9-005056bc217f" /></label> <br />
+								<label>Sími<input type="text"  class="phone" name="fieldbe0e0da4-27a3-11e7-80c9-005056bc217f" /></label> <br />
+								<label>Texti<textarea name="fieldceb2933a-27a3-11e7-80c9-005056bc217f" class="text">
+								</textarea></label> <br />
+								<input type="submit" value="Senda" />
+							</form>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+
 			<!-- Begin Accordion + IMG  -->
 			<div class="mt40 mb40">
 				<div class="container">
@@ -515,6 +543,18 @@
 		delay:  'onload'
 		}
 		window.sr = new scrollReveal( config );
+
+		$(document).ready(function(){
+		
+			$('.form').submit(function(){
+				var form = $(this).serialize();
+				console.log(form);
+				
+				$.post("http://tryggvi.demo01.lisa.is/contact", form, function(){ alert('success!'); });
+				
+			});
+		});
+
     </script>
 
 	
