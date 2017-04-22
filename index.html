@@ -546,7 +546,7 @@
 
 		$(document).ready(function(){
 		
-			$('.form').submit(function(){
+			$('.contact-form').submit(function(){
 				var form = $(this).serialize();
 				$.post("http://tryggvi.demo01.lisa.is/contact", form, function(){ });
 				return false;
