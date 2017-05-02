@@ -32,8 +32,26 @@ body{margin:0;padding:0;font-family:'Open Sans',sans-serif;font-size:13px;line-h
     letter-spacing: 4px;
 }
 
-@media(max-width:767px){
+@media(max-width:768px){
     .testimony .carousel-inner .item{
         min-height:300px;
     }
+	
+	.flex-four{
+		order:2;
+	}
+	.flex-five{
+		order:3;
+	}
+	.hafa-samband-button{
+		text-align:center;
+	}
+	
+	
+}
+@media(max-width:991px){
+	.site-title a{
+		font-size:12px;
+		line-height:31px;
+	}
 }
